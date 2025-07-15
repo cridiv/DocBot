@@ -1,16 +1,4 @@
-const BASE_URL = "http://localhost:8000";
-
-export interface FileInfo {
-  id: string;
-  name: string;
-  path: string;
-  size: number;
-}
-
-export interface UploadResponse {
-  session_id: string;
-  files: FileInfo[];
-}
+const BASE_URL = "https://docbot-x1li.onrender.com";
 
 export interface FileInfo {
   id: string;

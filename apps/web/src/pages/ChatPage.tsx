@@ -40,11 +40,13 @@ const DocBotChat: React.FC = () => {
   const [isLeftPanelOpen, setIsLeftPanelOpen] = useState(true);
   const [activeTab, setActiveTab] = useState<'history' | 'preview'>('history');
   const [isTyping, setIsTyping] = useState(false);
-  const [currentFiles, setCurrentFiles] = useState<Array<{name: string; pages?: number; size?: string}>>([]);  
+  const [currentFiles, setCurrentFiles] = useState<Array<{name: string; pages?: number; size?: string}>>([]);
+  
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  // Get uploaded files info from localStorage
   useEffect(() => {
     const uploadedFilesData = localStorage.getItem("docbot_files");
     if (uploadedFilesData) {
@@ -344,7 +346,7 @@ const handleSend = async () => {
                         {message.sourceSnippets.map((snippet, index) => (
                           <div
                             key={index}
-                            className="p-2 bg-gray-700/30 rounded-lg border-l-2 border-violet-500/50 cursor-pointer hover:bg-gray-700/50 transition-colors"
+                            className="p-2 bg-gray-700/30 rounded-lg border-l-2 border-violet-500/50 hover:bg-gray-700/50 transition-colors"
                           >
                             <p className="text-xs text-gray-300">{snippet.text}</p>
                             <div className="flex items-center gap-2 mt-1">
