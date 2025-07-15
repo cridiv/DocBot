@@ -1,0 +1,9 @@
+/apps/backend/venv
+node_modules
+.env
+__pycache__/
+uploads/
+dist/
+venv/
+*.pyc
+vectorstores/

@@ -1,0 +1,88 @@
+📌 Project Overview: "TrendPulse" (Premium Product Research Tool)
+A SaaS platform that identifies top-selling products on Shopify (via scraping) + eBay (via API), helping e-commerce sellers find winning items to sell.
+
+🎯 Core Purpose
+Solve: Dropshippers/resellers struggle to find trending products manually.
+
+Offer: Automated daily reports on hottest items across Shopify/eBay.
+
+Monetize: Freemium model (free preview → paid full access).
+
+✨ Key Features
+1. Data Collection Engine
+Shopify: Scrape public stores for:
+
+Bestseller tags, pricing, inventory changes.
+
+eBay: Use official API to fetch:
+
+completedItems (sold listings), mostWatched items.
+
+2. Dashboard (User-Facing)
+Daily Trending Products: Ranked by sales velocity.
+
+Cross-Platform Comparison:
+
+Example: "This dress sells for 
+20
+o
+n
+S
+h
+o
+p
+i
+f
+y
+b
+u
+t
+20onShopifybut50 on eBay."
+
+Alerts: Email/Telegram notifications for stock drops.
+
+3. Monetization Layers
+Free Tier: 3 product previews/day.
+
+Premium (
+10
+−
+10−30/month): Full access + CSV exports.
+
+🔧 How It Works
+Backend (Python):
+
+Scrapes Shopify stores (rotating proxies to avoid bans).
+
+Pulls eBay data via API (5,000 free calls/month).
+
+Analyzes trends (e.g., "Y2K fashion spiking 200% this week").
+
+Frontend (Next.js):
+
+Displays trends in a clean dashboard (charts, filters).
+
+Handles user auth + Stripe payments.
+
+Automation:
+
+Runs daily scrapes via GitHub Actions/AWS Lambda.
+
+⚖️ Legal & Ethical Notes
+Shopify: Only scrape public data (no brute-forcing logins).
+
+eBay: Stay within free API limits (5,000 calls/month).
+
+Disclaimer: "Data sourced from public listings; comply with platform policies."
+
+📊 Example Output (What Users See)
+Rank	Product	Platform	Price	Sold (24h)	Trend
+1	Yoga Mat (Lululemon-style)	Shopify	$29	150 units	🔥 +300%
+2	Vintage Nokia 3310	eBay	$45	80 bids	⬆️ +120%
+🚀 Why This Works
+Pain Point: Sellers waste hours manually researching.
+
+Solution: Automated, data-driven insights.
+
+Market: Dropshippers, Amazon FBA sellers, small e-commerce stores.
+

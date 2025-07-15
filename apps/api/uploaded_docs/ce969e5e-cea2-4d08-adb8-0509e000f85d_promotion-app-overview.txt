@@ -1,0 +1,28 @@
+Project Name: Social Boost App
+
+Overview:
+The Social Boost App is a paid promotional tool that helps users increase visibility and engagement for their blogs, social media posts, stores, and platforms. It uses automation, social media APIs, OpenAI-powered content generation, and curated community targeting to drive real engagement on Facebook, Instagram, and Reddit.
+
+Core Features:
+- Campaign creation for Facebook, Instagram, and Reddit
+- AI-generated captions and hashtags using OpenAI
+- Scheduled or instant auto-posting (where allowed)
+- Manual post support for Facebook groups via curated high-engagement lists
+- Reddit bot support to post to targeted subreddits
+- Instagram posting via user business accounts or your own promo pages
+- Dashboard with campaign status, post previews, and basic analytics
+
+Platform Scope:
+- Facebook (Groups via manual or owned group auto-post)
+- Instagram (Business accounts via Graph API)
+- Reddit (via PRAW Reddit API automation)
+
+Tools & Tech:
+- Node.js / Python (for bots & backend logic)
+- Supabase or PlanetScale (Free database)
+- OpenAI API (for caption generation & enhancement)
+- Basic dashboard (React or HTML/CSS/JS)
+
+Revenue Model:
+- Paid campaigns per post or monthly tiered plans
+- Add-on: Premium caption quality or access to broader subreddit list

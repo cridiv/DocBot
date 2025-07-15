@@ -1,0 +1,15 @@
+Hi, I'm Aderemi Ademola – a Software Developer specializing in TypeScript & NestJS
+
+I build robust backend systems and scalable web applications with clean, maintainable code. With expertise in modern development practices, I help clients turn ideas into efficient digital solutions.
+
+What I offer:
+✔ Backend development with TypeScript/NestJS
+✔ Frontend Development: Responsive UIs with React/Typescript
+✔ Full-Stack Integration: Seamless connection between frontend & backend
+✔ AI-Enhanced Features: Smart integrations for dynamic user experiences
+✔ API design & integration
+✔ Performance optimization
+
+As an AI enthusiast, I actively explore integrating machine learning into applications to solve real-world problems. I stay ahead of tech trends through continuous learning and contribute to open-source projects.
+
+Let's collaborate to build something exceptional!

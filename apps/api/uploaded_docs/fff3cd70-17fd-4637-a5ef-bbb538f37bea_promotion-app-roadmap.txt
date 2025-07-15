@@ -1,0 +1,38 @@
+PHASE 1: SETUP (Week 1)
+- Define app architecture (backend, bots, dashboard)
+- Set up Supabase database (tables: users, campaigns, accounts, groups)
+- Get OpenAI API ready for caption generation
+- Create test Facebook Page, Instagram Business account, Reddit bot accounts
+
+PHASE 2: CORE FEATURES (Weeks 2–4)
+- Campaign form UI: platform, caption, media, schedule
+- OpenAI integration: generate smart captions from keywords
+- Reddit Bot:
+  - Create posting script using PRAW
+  - Enable subreddit targeting
+  - Track post links and success
+- Instagram:
+  - Integrate Graph API for posting to connected business accounts
+  - Store tokens securely
+- Facebook:
+  - Auto-posting for owned groups via Graph API
+  - Manual group posting list (curated + copy-to-clipboard UI)
+
+PHASE 3: DASHBOARD & LOGIC (Week 5–6)
+- Dashboard UI with:
+  - Campaign status (success, error, pending)
+  - Post preview and performance
+- Backend job to handle scheduled posts
+- Error logging and basic post analytics (views, clicks)
+
+PHASE 4: POLISHING & MVP LAUNCH (Week 7)
+- Add user onboarding
+- Improve UI and responsiveness
+- Add “suggested groups/subreddits” based on user tags
+- Launch MVP with pricing tiers
+
+PHASE 5: GROWTH (Post-launch)
+- Collect feedback
+- Add more subreddits/groups
+- Add AI-image enhancement for post visuals
+- Add affiliate/reward referral system

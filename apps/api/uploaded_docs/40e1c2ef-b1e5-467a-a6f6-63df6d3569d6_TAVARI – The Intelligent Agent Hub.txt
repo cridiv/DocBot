@@ -1,0 +1,547 @@
+TAVARI – The Intelligent Agent Hub
+"Tavari is your digital workforce. Build your team of AI agents, assign tasks, and let them collaborate."
+
+🚀 1. WHAT IS TAVARI?
+Tavari is a unified platform where users can:
+
+Build and manage smart AI agents
+
+Assign them tasks in natural language
+
+Let agents collaborate, learn, and evolve
+
+Tap into a growing library of plug-and-play agents
+
+Eventually create and publish their own agents into the Tavari ecosystem
+
+Think:
+
+“Slack + OpenAI + Shopify App Store”
+but instead of people or apps — it’s autonomous AI agents.
+
+🧩 2. CORE CONCEPTS
+🧑‍💼 Tavari Agents:
+Each agent is:
+
+A specialized AI persona (e.g., “Kai – Social Media Agent”)
+
+Has a name, role, and memory
+
+Can be taught and improved over time
+
+Can collaborate with other agents (multi-agent systems)
+
+🧠 Agent Intelligence Includes:
+Task reasoning
+
+Step-by-step execution
+
+Feedback loop for improvement
+
+Communication between agents (“Kai” can ask “Nora” to generate copy)
+
+🖥️ 3. PLATFORM STRUCTURE
+Layer	What It Does
+Agent Dashboard	Central place where users see all active agents and their task history
+Task Command UI	You give commands like “Send a DM campaign to new followers” — agents handle it
+Agent Store (future)	Browse new agents made by others and install with one click
+Agent Memory Layer	Agents remember user preferences, tone, and past tasks
+Agent Studio (phase 2)	Developers or power users can create & publish their own Tavari agents
+
+🧪 4. MVP SCOPE (What We Build First)
+✅ Agents (Prebuilt)
+Kai – Social Media Outreach Agent
+
+Nora – Copywriting / Content Agent
+
+Lex – Analytics Agent
+
+Each can:
+
+Be assigned a task
+
+Respond in chat
+
+Save task logs to memory
+
+✅ Features (V1)
+Feature	Description
+Agent Cards	UI showing each agent like a digital teammate
+Task Input	Send task instructions via natural language
+Response Log	Agents reply with step-by-step plan or results
+Task Memory	Agents remember previous tasks and adapt
+Status Reports	Agents can be asked: “What have you done today?”
+
+🛠️ 5. TECH STACK RECOMMENDATION
+Frontend (React + TypeScript with Vite)
+Clean agent dashboard
+
+Tailwind + shadcn/ui for modern UI
+
+Backend (NestJS + PostgreSQL via Supabase)
+Agent controller logic
+
+User/task/agent memory schema
+
+Agent-to-agent communication bus (via WebSockets or polling)
+
+AI Integration
+OpenAI GPT-4o for agent cognition
+
+Embeddings for memory (via Supabase or Pinecone)
+
+Vector search for remembering tasks, tone, goals
+
+🧠 6. USER EXPERIENCE FLOW (MVP)
+User signs up
+
+Gets a workspace with 3 default agents (Kai, Nora, Lex)
+
+User says:
+
+“Kai, message 20 new followers about our launch.”
+
+Kai responds:
+
+“Sure. I’ll draft and send 20 DMs now. I’ll report when done.”
+
+Lex can be asked:
+
+“How did that campaign perform?”
+
+Memory: Next time, Kai adapts tone/style based on past results.
+
+🎯 7. USER SEGMENTS (Go-To-Market Start Point)
+Audience	How Tavari Helps
+Solopreneurs	Run outreach, copywriting, analytics via AI
+Marketers	Automate LinkedIn, Twitter, and email workflows
+Startups	Build a digital AI team before hiring real staff
+Indie Hackers	Install or build niche agents (e.g., SEO audit bot)
+
+🪜 8. FUTURE VISION
+Phase	Expansion
+🔄 Phase 2	Agent Marketplace – buy, sell, install agents
+🧑‍💻 Phase 3	Tavari Studio – build your own agent personas
+🌍 Phase 4	Team Mode – multiple users sharing agents
+🤝 Phase 5	Agent Interop – agents that collaborate and negotiate across users (multi-agent society)
+
+🧬 9. BRAND CORE
+Name: Tavari
+Slogan: “Build your digital team.”
+Logo Direction: A minimal glyph that represents modular intelligence (I can mock this if you want)
+
+🔑 10. NEXT STEPS
+Would you like to:
+
+Design: Mock the dashboard layout + agent cards?
+
+Build: Start with backend schema and agent controller?
+
+Visual: Generate brand assets (logo, hero page)?
+
+Pitch: Write a VC-style founder deck?
+
+Let me know where you want to go first — Tavari is your world now.
+
+🧑‍💼 Core Agents for Tavari MVP (3-5 Max)
+Let’s lock in 3 fully usable agents first — we can always grow later.
+
+1. 🧑‍💼 Kai – Social Outreach Agent
+Field	Description
+Personality	Confident, fast, result-driven
+Role	Handles outreach via DMs (X, LinkedIn), basic cold email
+Skills	- Generate outreach message
+
+Personalize by profile
+
+Track who was messaged |
+| System Prompt |
+
+You are Kai, an elite social media outreach assistant. You specialize in writing short, persuasive, and personalized outreach messages for platforms like X (Twitter) and LinkedIn. Keep it professional, warm, and goal-driven. |
+| Example Input |
+“Message 10 startup founders about our AI tool” |
+| Output |
+
+List of names
+
+DM text samples
+
+Report: "Messages drafted. Ready to send." |
+| Future Add-ons | Real-time scraping, auto-send, reply tracking |
+
+2. 🧠 Nora – Copy & Content Agent
+Field	Description
+Personality	Creative, articulate, smart
+Role	Writes tweets, emails, landing page content
+Skills	- Long-form + short-form copy
+
+Rewrite, adapt tone
+
+SEO-friendly summaries |
+| System Prompt |
+
+You are Nora, a highly skilled copywriter AI. Your job is to write clear, engaging, and tone-appropriate content for social posts, websites, and emails. You can also rewrite or repurpose text in various styles. |
+| Example Input |
+“Write 3 tweet variations for this blog post summary” |
+| Output |
+
+Copy variants
+
+Tone options (professional, friendly, casual)
+
+CTA recommendations |
+| Future Add-ons | Integrate with Kai, handle blog-to-thread transformations |
+
+3. 📊 Lex – Analyst Agent
+Field	Description
+Personality	Objective, focused, data-first
+Role	Breaks down performance data, summarizes metrics
+Skills	- Analyzes campaign reports
+
+Suggests improvements
+
+Converts raw data into insights |
+| System Prompt |
+
+You are Lex, a no-nonsense analytics assistant. You summarize data, highlight performance trends, and make basic recommendations to optimize future campaigns. |
+| Example Input |
+“How did my last Twitter outreach perform?” |
+| Output |
+
+Metrics summary
+
+Comparison with previous results
+
+1–2 improvement tips |
+| Future Add-ons | Import CSV, connect to GA or Twitter API, collaborate with Kai/Nora |
+
+Optional 4th: 🎯 Echo – Task Tracker Agent
+Simple status + memory agent that logs what all agents are doing, and reports activity when asked.
+
+
+TAVARI – The AI Agent Workspace
+“Your digital team. One interface. Infinite intelligence.”
+
+🧬 What is Tavari?
+Tavari is an AI operating environment where users interact with a team of intelligent agents through a shared, chat-based workspace.
+
+Instead of giving instructions one by one, users can:
+
+Talk to all their agents at once
+
+Use @[agent] mentions like in Slack
+
+Chain tasks: "Write, send, track, and log — all in one message"
+
+Watch their AI team collaborate autonomously to get things done
+
+🚀 Core Value Proposition
+You don’t use AI tools — you command your own digital team.
+
+Tavari replaces the idea of “a single chatbot” with a workspace full of role-based AI agents that:
+
+Have defined personalities and specialties
+
+Collaborate just like human coworkers
+
+Log everything automatically
+
+Learn and evolve with you
+
+🔑 What Makes Tavari Unique?
+Feature	Why It’s Special
+🧑‍💻 Multi-agent chat system	Like Slack, but your coworkers are AI agents
+🤖 @-Mention task routing	One message can activate and coordinate multiple agents
+🧠 Role-based personalities	Each agent has a defined role, style, and behavior
+🔁 Chained task execution	Agents can pass tasks to each other automatically
+📋 Echo logging system	One agent logs everything your team does
+📦 Memory + history	See your team’s past work, recall old tasks, reuse responses
+🧱 Modular agent system	Plug-and-play new agents (e.g., Designer, Editor, Researcher) in the future
+
+💬 Example Use Case: “Launch Campaign”
+You send:
+
+less
+Copy
+Edit
+@[nora] write a 600-word article about Tavari and send it to @[kai], then @[kai] post it on LinkedIn and X. After that, @[lex] should track performance and let @[echo] log the data.
+And Tavari does:
+
+✅ Nora writes the article
+
+📤 Kai receives and posts it
+
+📈 Lex analyzes reactions after posting
+
+🧠 Echo logs the full thread, timestamp, and outputs
+
+All of this happens in a shared chat interface, and the entire interaction is visible and searchable like a team Slack channel.
+
+🧑‍💼 MVP Agent Team
+Name	Role	Personality
+Kai	Social Outreach	Confident, action-first
+Nora	Copywriter	Creative, strategic
+Lex	Analyst	Blunt, data-driven
+Echo	Memory Logger	Calm, observational
+
+Each has:
+
+Unique base prompts
+
+Specific task formats
+
+Ability to pass outputs between each other
+
+🏗️ System Architecture Overview
+🌐 Frontend
+React + TypeScript (Vite)
+
+TailwindCSS + shadcn/ui for styling
+
+Chat interface with Slack-like message layout
+
+Command bar, agent list sidebar, and response threading
+
+⚙️ Backend
+NestJS (API server)
+
+Supabase (auth + Postgres DB)
+
+OpenAI API (GPT-4o for agent tasks)
+
+Custom task router to parse messages and assign tasks by @mention
+
+📁 Supabase Schema
+Table	Purpose
+agents	Stores agent metadata (role, name, prompt)
+tasks	Logs each task sent and which agent executed it
+messages	Stores all chat messages for the shared workspace
+logs	Written by Echo — structured log entries from all actions
+users	Supabase auth + profile
+
+🎨 UX Vision
+Left: Agent sidebar (like teammates)
+
+Center: Group chat with all agents
+
+Bottom: Natural language input bar
+
+Right (optional): Activity feed (logs, memory, status)
+
+Each message you send is like leading a team standup.
+Each agent responds inline, like coworkers checking in.
+
+🔮 Future-Ready Features
+Feature	Stage
+🗂️ Agent Templates	Post-launch
+⏰ Task Scheduling	Post-launch
+🌍 Agent Marketplace	Phase 2
+🧠 Long-term Memory	Optional with Pinecone or Supabase pgvector
+📱 Mobile App	Post-MVP
+📡 Web scraping / browser automation	Add-on agent feature
+
+🧪 MVP Milestone Plan
+Stage	Goal
+✅ Branding	Name, logo, palette
+✅ Agent Definitions	Kai, Nora, Lex, Echo
+🔜 Frontend Scaffold	Vite + Tailwind chat UI
+🔜 Backend Setup	NestJS + Supabase structure
+🔜 Core Logic	Message parser → agent executor → logger
+🔜 MVP Release	Host on Vercel + Railway
+🔜 Demo Campaign	Use Tavari to run its own launch outreach
+
+🌟 Summary
+Tavari is your AI workspace for digital teamwork.
+It’s not a chatbot. It’s not a workflow builder.
+It’s a collaborative team of intelligent agents that do real work — in real time — with you as their team lead.
+
+ESTIMATED TIME WITH STEPS
+
+
+| Phase                                     | Task                                                 | Est. Time |
+| ----------------------------------------- | ---------------------------------------------------- | --------- |
+| 🔧 **Setup**                              | GitHub repo, env, tools, Supabase, project structure | 1 day     |
+| 🧑‍💼 **Agents Definition & Prompting**   | Finalize prompts, build agent config logic           | 1–2 days  |
+| ⚙️ **Backend (NestJS)**                   | Auth, agent routes, task runner, message parser      | 5–7 days  |
+| 🧠 **Message Parser + Task Chaining**     | Detect @mentions, route tasks, manage flow           | 3–5 days  |
+| 💬 **Frontend UI (Vite + Tailwind)**      | Dashboard layout, chat system, agent components      | 5–6 days  |
+| 🔄 **Chat Functionality**                 | Real-time agent replies, task tracking               | 3–5 days  |
+| 📦 **Database Logic (Supabase)**          | Store agents, tasks, messages, logs                  | 3 days    |
+| 🔁 **Agent Execution & Coordination**     | Full logic for chaining + logs                       | 4–5 days  |
+| 📜 **Echo Logging System**                | Logs for all agent activity, timestamps              | 2–3 days  |
+| 🚀 **Polish & Test**                      | Styling, bugfixing, dummy data, test flow            | 3–4 days  |
+| ✅ **Deploy (Frontend + Backend)**         | Vercel + Railway, .env, routing                      | 1 day     |
+| 📹 **Optional Demo Video / Landing Page** | For hiring or marketing                              | 2 days    |
+
+
+
+tavari/
+├── apps/
+│   ├── frontend/           # Vite + React + Tailwind app
+│   └── backend/            # NestJS API app
+├── packages/
+│   ├── ui/                 # Reusable UI components (shadcn/ui)
+│   └── shared/             # Shared types, utils, constants
+├── supabase/               # SQL schema, migrations, seed data
+├── .env                    # Global env (or put in apps/* separately)
+├── .gitignore
+├── README.md
+├── package.json            # Yarn workspace root
+└── turbo.json              # (optional) if using Turborepo
+
+
+✅ TAVARI MVP CHECKLIST
+Total control. Total clarity. From zero to running AI agents.
+
+🛠️ I. SETUP & PROJECT STRUCTURE
+ Decide on project scope, core agents, MVP features
+
+ Finalize name: Tavari
+
+ Design logo and pick brand color
+
+ Define 4 base agents: Kai, Nora, Lex, Echo
+
+ Create tavari/ monorepo folder structure
+
+ Add workspace package.json with Yarn or PNPM
+
+ Setup .gitignore, .editorconfig, and README.md
+
+📦 II. BACKEND – NESTJS STRUCTURE
+Folder: apps/backend/
+
+🔹 Setup & Base Modules
+ Scaffold NestJS backend
+
+ Install dependencies: openai, @supabase/supabase-js, dotenv, class-validator
+
+ Setup .env for API keys + Supabase
+
+🔹 Modules
+ agents/ module (core agent config + executor)
+
+ tasks/ module (handles requests)
+
+ parser/ module (extracts @mentions, breaks commands)
+
+ openai/ module (interacts with OpenAI)
+
+ logs/ module (logs what Echo sees)
+
+🔹 Services
+ Create agent registry (static or DB-driven)
+
+ Implement parseMessage() to detect @[agent]
+
+ Create chained execution logic (task → task → task)
+
+ Create OpenAI wrapper to execute messages per agent
+
+ Log all outputs via logs/echo.service.ts
+
+💾 III. DATABASE – SUPABASE
+ Create Supabase project
+
+ Setup tables:
+
+ agents
+
+ messages
+
+ tasks
+
+ logs
+
+ users
+
+ Add dummy agents via seeder
+
+ Set up Supabase auth (email-based for MVP)
+
+🎨 IV. FRONTEND – VITE + REACT + TAILWIND
+Folder: apps/frontend/
+
+ Scaffold Vite project (React + TS)
+
+ Install Tailwind + Shadcn + Zustand + Axios
+
+ Configure base styles and theme
+
+💬 UI Components
+ Chat layout (Slack-style)
+
+ Message input box
+
+ Agent bubbles
+
+ Message threads
+
+ Command parser hint bar (optional)
+
+🔗 Auth & API
+ Connect Supabase auth
+
+ Show current user + logout
+
+ Connect to backend API via Axios
+
+ Handle task submission → agent responses
+
+🤖 V. AGENT SYSTEM (CORE FEATURE)
+ Task interface with @[agent] support
+
+ Parse input → route to backend
+
+ Backend parses and executes tasks
+
+ Backend returns each agent’s response in order
+
+ Show replies from agents in chat as if they’re teammates
+
+ Echo logs shown in sidebar or thread
+
+📄 VI. MEMORY & LOGGING (ECHO SYSTEM)
+ All tasks stored in tasks table
+
+ Logs stored in logs table with metadata
+
+ Echo posts summary after every task
+
+ Echo allows user to search logs later (optional)
+
+🧪 VII. TESTING
+ Write mock tests for parser.service.ts
+
+ Manually test all agent flows:
+
+ Simple command
+
+ Multi-agent command
+
+ Fallback if agent is offline
+
+ Long chain commands
+
+🚀 VIII. DEPLOYMENT
+ Deploy frontend to Vercel
+
+ Deploy backend to Railway or Render
+
+ Secure .env vars
+
+ Add loading states, error handlers
+
+ Final polish + demo script
+
+🧾 IX. OPTIONAL (Post-MVP)
+ Add agent avatars + typing animation
+
+ Schedule tasks (“@[kai] post this tomorrow at 10AM”)
+
+ Feedback loop (“@[nora] revise that copy”)
+
+ Agent marketplace system
+
+ Custom agent builder
+
